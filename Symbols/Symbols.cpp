@@ -1,10 +1,10 @@
 // Symbols.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//Нужно посчитать, сколько раз каждый символ встречается в заданном тексте, и отсортировать по убыванию частоты.
+//ГЌГіГ¦Г­Г® ГЇГ®Г±Г·ГЁГІГ ГІГј, Г±ГЄГ®Г«ГјГЄГ® Г°Г Г§ ГЄГ Г¦Г¤Г»Г© Г±ГЁГ¬ГўГ®Г« ГўГ±ГІГ°ГҐГ·Г ГҐГІГ±Гї Гў Г§Г Г¤Г Г­Г­Г®Г¬ ГІГҐГЄГ±ГІГҐ, ГЁ Г®ГІГ±Г®Г°ГІГЁГ°Г®ГўГ ГІГј ГЇГ® ГіГЎГ»ГўГ Г­ГЁГѕ Г·Г Г±ГІГ®ГІГ».
 
 #include <iostream>
 #include <string>
 #include <map>
-#include <cctype>  // Для функции tolower
+#include <cctype>  // Р”Р»СЏ С„СѓРЅРєС†РёРё tolower
 #include <locale>
 
 int main() {
@@ -13,10 +13,10 @@ int main() {
     std::map<char, int> Mymap;
     std::string key;
 
-    std::cout << "Введите строку: ";
+    std::cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ";
     std::getline(std::cin, key);
 
-    // Подсчет частоты символов
+    // РџРѕРґСЃС‡РµС‚ С‡Р°СЃС‚РѕС‚С‹ СЃРёРјРІРѕР»РѕРІ
     for (char c : key) {
         Mymap[std::tolower(c)]++;
     }
